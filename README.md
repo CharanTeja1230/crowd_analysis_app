@@ -1,153 +1,147 @@
 # 🚀 AI-Powered Crowd Behavior Analysis Web Application
 
-An advanced web app for analyzing crowd behavior using images, videos, and live feeds — powered by simulated data and interactive visualizations.
+An advanced, user-friendly web application for real-time crowd behavior analysis. Built with a modern tech stack, it supports image, video, and live camera feed analysis alongside sensor integration.
 
-## 🎯 Features
+## 🌟 Features
 
-- 🔐 **User Authentication**: Secure login with simulated accounts
-- 🔍 **Real-Time Analysis**: Supports image, video, and live camera feed processing
-- 🛰️ **Simulated Sensor Integration**: Mock sensor data visualization
-- 📊 **Advanced Visuals**: Heatmaps, density charts, anomaly detection
-- 🛠️ **Admin Dashboard**: User control, sensor monitoring, and log history
+- 🔒 **User Authentication**: Secure login with simulated user accounts
+- 📹 **Media Analysis**: Supports image, video, and live camera feed uploads
+- 📊 **Real-time Data Visualization**: Heatmaps, density trends, and anomaly detection
+- 📍 **Location Management**: Search, track, and bookmark locations
+- 🔧 **Admin Dashboard**: User management, sensor control, and logs
+
+---
 
 ## 🛠️ Tech Stack
 
-- 🌟 **Next.js (React)** — Framework
-- 🎨 **Tailwind CSS** — Styling
-- 💫 **Framer Motion** — Animations
-- 📈 **Recharts** — Data visualization
-- 💾 **Zustand** — State management
+- **Frontend:** Next.js (React), Tailwind CSS, Framer Motion, Zustand, Recharts
+- **Backend:** Node.js, Express, MongoDB (optional for advanced features)
+- **Deployment:** Vercel (Frontend), Render/Fly.io (Backend)
 
-## 📂 Directory Structure
+---
 
-```bash
-└── charanteja1230-crowd_analysis_app/
-    ├── README.md
-    ├── components.json
-    ├── next.config.mjs
-    ├── package.json
-    ├── postcss.config.mjs
-    ├── tailwind.config.ts
-    ├── tsconfig.json
-    ├── v0-user-next.config.js
-    ├── v0-user-next.config.mjs
-    ├── backend/
-    │   ├── Dockerfile
-    │   ├── fly.toml
-    │   ├── package.json
-    │   ├── server.js
-    │   └── models/
-    │       ├── Analysis.js
-    │       ├── Location.js
-    │       ├── Sensor.js
-    │       └── User.js
-    ├── components/
-    │   ├── enhanced-search-bar.tsx
-    │   ├── file-uploader.tsx
-    │   ├── live-feed-mini.tsx
-    │   ├── location-display.tsx
-    │   ├── mode-toggle.tsx
-    │   ├── notification-center.tsx
-    │   ├── notifications.tsx
-    │   ├── quick-upload.tsx
-    │   ├── search-bar.tsx
-    │   ├── theme-provider.tsx
-    │   ├── dashboard/
-    │   │   ├── anomaly-detection.tsx
-    │   │   ├── current-density.tsx
-    │   │   ├── density-trends.tsx
-    │   │   ├── heat-map.tsx
-    │   │   ├── predictions.tsx
-    │   │   └── sensor-data.tsx
-    │   └── ui/
-    │       ├── accordion.tsx
-    │       ├── alert-dialog.tsx
-    │       ├── alert.tsx
-    │       ├── aspect-ratio.tsx
-    │       ├── avatar.tsx
-    │       ├── badge.tsx
-    │       ├── breadcrumb.tsx
-    │       ├── button.tsx
-    │       ├── calendar.tsx
-    │       ├── card.tsx
-    │       ├── carousel.tsx
-    │       ├── chart.tsx
-    │       ├── checkbox.tsx
-    │       ├── collapsible.tsx
-    │       ├── command.tsx
-    │       ├── context-menu.tsx
-    │       ├── dialog.tsx
-    │       ├── drawer.tsx
-    │       ├── dropdown-menu.tsx
-    │       ├── form.tsx
-    │       ├── hover-card.tsx
-    │       ├── input-otp.tsx
-    │       ├── input.tsx
-    │       ├── label.tsx
-    │       ├── menubar.tsx
-    │       ├── navigation-menu.tsx
-    │       ├── pagination.tsx
-    │       ├── popover.tsx
-    │       ├── progress.tsx
-    │       ├── radio-group.tsx
-    │       ├── resizable.tsx
-    │       ├── scroll-area.tsx
-    │       ├── select.tsx
-    │       └── separator.tsx
-    ├── frontend/
-    │   ├── next.config.js
-    │   ├── package.json
-    │   ├── vercel.json
-    │   └── src/
-    │       ├── app/
-    │       │   ├── globals.css
-    │       │   ├── layout.tsx
-    │       │   ├── dashboard/
-    │       │   │   ├── layout.tsx
-    │       │   │   └── page.tsx
-    │       │   ├── login/
-    │       │   │   └── page.tsx
-    │       │   └── register/
-    │       │       └── page.tsx
-    │       ├── context/
-    │       │   └── auth-context.tsx
-    │       └── lib/
-    │           ├── utils.ts
-    │           └── stores/
-    │               ├── location-store.ts
-    │               └── sensor-store.ts
-    └── styles/
-        └── globals.css
+## 🗂 Directory Structure
+
+📁 **charanteja1230-crowd_analysis_app**
+
+### 📌 **Frontend**
+```
+├── frontend/
+│   ├── next.config.js
+│   ├── package.json
+│   ├── vercel.json
+│   └── src/
+│       ├── app/
+│       │   ├── globals.css
+│       │   ├── layout.tsx
+│       │   ├── dashboard/
+│       │   │   ├── layout.tsx
+│       │   │   └── page.tsx
+│       │   ├── login/
+│       │   │   └── page.tsx
+│       │   └── register/
+│       │       └── page.tsx
+│       ├── components/
+│       │   ├── enhanced-search-bar.tsx
+│       │   ├── live-feed-mini.tsx
+│       │   ├── location-display.tsx
+│       │   ├── notification-center.tsx
+│       │   ├── quick-upload.tsx
+│       │   ├── theme-provider.tsx
+│       │   └── ui/
+│       │       └── mode-toggle.tsx
+│       ├── context/
+│       │   └── auth-context.tsx
+│       └── lib/
+│           ├── utils.ts
+│           └── stores/
+│               ├── location-store.ts
+│               └── sensor-store.ts
 ```
 
-## 🔧 Installation
-
-1️⃣ **Clone the repository**
-```bash
-git clone https://github.com/charanteja1230/crowd_analysis_app.git
-cd crowd_analysis_app
+### 🔧 **Backend**
+```
+├── backend/
+│   ├── Dockerfile
+│   ├── fly.toml
+│   ├── package.json
+│   ├── server.js
+│   └── models/
+│       ├── Analysis.js
+│       ├── Location.js
+│       ├── Sensor.js
+│       └── User.js
 ```
 
-2️⃣ **Install dependencies**
+---
+
+## 🛠️ Installation
+
+### 🔥 Prerequisites
+- Node.js (v18+)
+- Vercel account (for frontend deployment)
+- Render/Fly.io account (for backend deployment)
+
+### 🔧 Setup
+
+1️⃣ Clone the repository:
+```bash
+git clone https://github.com/yourusername/crowd-analyzer.git
+cd crowd-analyzer
+```
+
+2️⃣ Install dependencies:
 ```bash
 npm install
 ```
 
-3️⃣ **Run development server**
+3️⃣ Run the development server:
 ```bash
 npm run dev
 ```
 
-## 🚀 Deployment
-
-- **Frontend**: Deploy via Vercel
-- **Backend**: Deploy on Fly.io, Railway, or Render (Docker support included)
-
-## 📢 Future Enhancements
-
-- 🔧 Real IoT sensor integration
-- 📍 Dynamic map visualizations
-- 🧠 Improved AI anomaly detection
+4️⃣ Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ---
 
+## 🚀 Deployment
+
+### Frontend Deployment (Vercel)
+1️⃣ Push your frontend code to GitHub
+2️⃣ Connect your repository to Vercel
+3️⃣ Set environment variables
+4️⃣ Deploy the frontend
+
+### Backend Deployment (Render/Fly.io)
+1️⃣ Push your backend code to GitHub
+2️⃣ Configure environment variables
+3️⃣ Deploy the backend
+
+---
+
+## 📌 To-Do List
+
+- 🌟 Improve UI/UX layout
+- 🔥 Enhance anomaly detection accuracy
+- 📲 Add mobile responsiveness
+- ⚙️ Implement WebSockets for live updates
+
+---
+
+## 💪 Contributing
+
+Contributions are welcome! Feel free to fork this repo and submit pull requests.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## ✨ Acknowledgments
+
+- Thanks to all the amazing open-source libraries used!
+
+🎉 **Happy Coding!** 🎉
